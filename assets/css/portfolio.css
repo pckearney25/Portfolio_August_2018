@@ -1,0 +1,103 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../images/rudbeckia.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-size: 3em;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  background-color: beige;
+  font-family: "Cormorant SC", serif;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.header-child {
+  flex-grow: 1;
+}
+
+header div {
+  padding: 25px 20px 25px 20px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.4em;
+}
+
+header ul li {
+  flex-grow: 1;
+  text-align: center;
+  width: 100px;
+  border-right: 1px solid black;
+}
+
+header ul li:last-child {
+  border-right: none;
+}
+
+header ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header ul li a.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+header ul li a.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.2);
+  color: black;
+}
+
+@media all and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  header div {
+    padding: 5px 0px 0px 0px;
+  }
+  header h1 {
+    text-align: center;
+  }
+  header ul {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 542px) {
+  header ul li {
+    width: 40%;
+    padding: 5px;
+    border: none;
+  }
+}
