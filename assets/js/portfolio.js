@@ -15,7 +15,7 @@ $(document).ready(function() {
       {
         scrollTop: $("#about-container").offset().top - headerHeight
       },
-      900
+      800
     );
   };
 
