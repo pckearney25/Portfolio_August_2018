@@ -15,14 +15,15 @@ h1 {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
   background-color: beige;
   font-family: "Cormorant SC", serif;
   z-index: 1;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .header-child {
@@ -78,14 +79,6 @@ header ul li a.hvr-grow:hover,
   color: black;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
 #page-container {
   margin-top: 0px;
 }
@@ -94,11 +87,6 @@ header ul li a.hvr-grow:hover,
   margin: 0px 40px 40px 40px;
   background: rgba(245, 245, 220, 0.9);
 }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-/*.sticky + #page-container {
-  padding-top: 102px;
-}*/
 
 @media all and (max-width: 800px) {
   header {
