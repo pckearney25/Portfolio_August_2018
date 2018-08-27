@@ -23,7 +23,7 @@ header {
   flex-flow: row wrap;
   background-color: beige;
   font-family: "Cormorant SC", serif;
-  z-index: 1;
+  z-index: 5;
 }
 
 .header-child {
@@ -81,6 +81,21 @@ header ul li a.hvr-grow:hover,
 
 #page-container {
   margin-top: 0px;
+}
+
+#quote-container {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 1;
+}
+#quote-container div {
+  font-size: 1.5em;
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .section-container {

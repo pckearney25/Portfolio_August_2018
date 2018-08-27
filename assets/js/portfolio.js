@@ -1,12 +1,38 @@
 $(document).ready(function() {
-  const headerHeight = $("header").height();
-  const containerOffset = headerHeight + 40 + "px";
-  $("#page-container").css("margin-top", containerOffset);
+  window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+  };
+
+  const setPageContainerOffset = () => {
+    const headerHeight = $("header").height();
+    const containerOffset = headerHeight + "px";
+    $("#page-container").css("margin-top", containerOffset);
+  };
+
+  const scrollContent = () => {
+    var headerHeight = $("header").height() + 40;
+    $("html, body").animate(
+      {
+        scrollTop: $("#about-container").offset().top - headerHeight
+      },
+      900
+    );
+  };
+
+  setPageContainerOffset();
+
+  $("#quote-container").animate(
+    {
+      opacity: 0
+    },
+    3600,
+    () => {
+      scrollContent();
+    }
+  );
 
   window.onresize = () => {
-    const headerHeight = $("header").height();
-    const containerOffset = headerHeight + 40 + "px";
-    $("#page-container").css("margin-top", containerOffset);
+    setPageContainerOffset();
   };
 
   $("a").on("click", function(event) {
