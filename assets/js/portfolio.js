@@ -1,8 +1,10 @@
 $(document).ready(function() {
+  //resets the scroll position when the page is reloaded
   window.onbeforeunload = function() {
     window.scrollTo(0, 0);
   };
 
+  //adjusts page-container div offset depending on prevailing header size in view
   const setPageContainerOffset = () => {
     const headerHeight = $("header").height();
     const containerOffset = headerHeight + "px";
@@ -21,6 +23,7 @@ $(document).ready(function() {
 
   setPageContainerOffset();
 
+  //enables background picture to be seen before the page content scrolls into view
   $("#quote-container").animate(
     {
       opacity: 0

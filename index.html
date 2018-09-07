@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick Kearney</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant+SC" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/portfolio.css" type="text/css">
@@ -37,24 +39,29 @@
                 </div>
                 <h2 class="section-header">About Me</h2>
 
-                <div>
+                <div class="about-section-content">
                     <p class="section-paragraph"> I have a strong interest in developing web applications that make complex
                         information more useful, accessible, and understandable to everyone. To my work, I bring the strong
                         scientific, business, and entrepreneurial skills that I developed over a career as both a pharmaceutical
                         research director and the founder of a scientific chemical research company. I recently completed
                         the Full-Stack Web-Development Boot Camp program offered by University of Kansas, and I am seeking
-                        new career opportunities in the information technology field. I believe in active life-long learning,
-                        and I am also currently working on becoming a certified master gardener. In my spare time you can
-                        find me working over on Bee-Z Street, a gardening web application I’m continuing to develop so everyday
-                        people can make more exciting home landscapes. Forever the scientist, I'm also experimenting to develop
-                        a new line of home gardening products and developing recipes a cookbook that hope to write someday.
+                        new career opportunities in the information technology field.
                     </p>
 
-                    <p>
-                        You can download both my techical resume and scientific CV here:
-                        <a href="assets/files/PCK_Technical_Resume.pdf" target="_blank">PCK 2018 Technical Resume</a>
-                        <a href="assets/files/PCK_CV.pdf" target="_blank">PCK 2018 Scientific CV</a>
+                    <p class="section-paragraph"> I believe in active life-long learning, and I am also currently working
+                        on becoming a certified master gardener. In my spare time you can find me working over on Bee-Z Street,
+                        a gardening web application I’m continuing to develop so everyday people can make more exciting home
+                        landscapes. Forever the scientist, I'm also experimenting to develop a new line of home gardening
+                        products and developing recipes a cookbook that hope to write someday.
                     </p>
+
+                    <p class="section-paragraph">
+                        Click to download my techical resume or scientific CV here:
+                    </p>
+                    <ul id="about-section-list">
+                        <li><a href="assets/files/PCK_Technical_Resume.pdf" target="_blank" class="hvr-grow">Technical Resume</a></li>
+                        <li> <a href="assets/files/PCK_CV.pdf" target="_blank" class="hvr-grow">Scientific CV</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="section-container" id="portfolio-container">
@@ -94,7 +101,18 @@
     </div>
 
     <footer>
-        &copy 2018 Patrick Kearney
+        <div>&copy2018 Patrick Kearney</div>
+        <div class="soc-media-div">
+            <a class="soc-media-links hvr-grow" href="https://www.linkedin.com/in/patrickckearney/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="soc-media-links hvr-grow" href="https://github.com/pckearney25" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a class="soc-media-links hvr-grow" href="https://stackoverflow.com/users/9205863/pckearney" target="_blank">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+        </div>
     </footer>
     <script src="./assets/js/portfolio.js" type="text/javascript"></script>
 </body>
