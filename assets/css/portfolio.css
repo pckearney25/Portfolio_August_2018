@@ -28,7 +28,7 @@ header {
   background-color: beige;
   font-family: "Cormorant SC", serif;
   z-index: 5;
-  border-bottom: 2px solid rgb(150, 50, 200);
+  border-bottom: 2px solid #16270f;
 }
 
 .header-child {
@@ -109,6 +109,7 @@ header ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px solid #16270f;
 }
 
 .section-img-div {
@@ -138,11 +139,13 @@ header ul li a {
   font-family: "Cormorant Garamond", serif;
   color: black;
   font-size: 1.4em;
+  line-height: 1.6em;
+
   padding: 0px 40px 20px 40px;
   text-align: justify;
 }
 
-.about-section-content p:nth-child(3) {
+.section-content p:nth-child(3) {
   padding: 0px 40px 15px 40px;
 }
 
@@ -171,6 +174,99 @@ header ul li a {
   border-bottom: 1px solid black;
 }
 
+#contact-form {
+  margin: 0px 40px 20px 40px;
+}
+
+#form-info-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  font-family: "Cormorant Garamond", serif;
+  padding-bottom: 10px;
+}
+
+.form-group:nth-child(1) {
+  width: 50%;
+}
+
+.form-group:nth-child(2) {
+  width: 50%;
+}
+
+.form-group:nth-child(3) {
+  width: 100%;
+}
+
+.form-group:nth-child(4) {
+  width: 100%;
+}
+.form-group label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  padding: 8px 0px 8px 8px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 80%;
+}
+
+#contact-subject {
+  width: 90%;
+}
+
+.form-group textarea {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  color: black;
+  display: block;
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 8px 0px 8px 8px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+small {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #8e44ad;
+}
+
+button {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1em;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #8e44ad;
+  color: white;
+  background-color: #8e44ad;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: #be2edd;
+}
+
+#contact-addendum {
+  font-size: 1.1em;
+}
+
 footer {
   background-color: beige;
   font-family: "Cormorant SC", serif;
@@ -178,6 +274,7 @@ footer {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 20px;
+  border-top: 2px solid #16270f;
 }
 
 .soc-media-div {
@@ -224,5 +321,17 @@ footer {
     width: 80%;
     padding-bottom: 10px;
     border: none;
+  }
+
+  .form-group:nth-child(1) {
+    width: 100%;
+  }
+
+  .form-group:nth-child(2) {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 90%;
   }
 }

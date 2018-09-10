@@ -39,27 +39,30 @@
                 </div>
                 <h2 class="section-header">About Me</h2>
 
-                <div class="about-section-content">
-                    <p class="section-paragraph"> I have a strong interest in developing web applications that make complex
-                        information more useful, accessible, and understandable to everyone. To my work, I bring the strong
-                        scientific, business, and entrepreneurial skills that I developed over a career as both a pharmaceutical
-                        research director and the founder of a scientific chemical research company. I recently completed
-                        the Full-Stack Web-Development Boot Camp program offered by University of Kansas, and I am seeking
-                        new career opportunities in the information technology field.
+                <div class="section-content">
+                    <p class="section-paragraph"> I enjoy developing web applications that make
+                        complex information more useful, accessible, and understandable to everyone. To my work, I
+                        bring the strong scientific, business, and entrepreneurial skills that I developed over a
+                        career as both a pharmaceutical research director and the founder of a scientific chemical
+                        research company. I recently completed the Full-Stack Web-Development Boot Camp program offered
+                        by University of Kansas, and I am seeking new career opportunities in the information
+                        technology field.
                     </p>
 
-                    <p class="section-paragraph"> I believe in active life-long learning, and I am also currently working
-                        on becoming a certified master gardener. In my spare time you can find me working over on Bee-Z Street,
-                        a gardening web application I’m continuing to develop so everyday people can make more exciting home
-                        landscapes. Forever the scientist, I'm also experimenting to develop a new line of home gardening
-                        products and developing recipes a cookbook that hope to write someday.
+                    <p class="section-paragraph"> I believe in active life-long learning, and I am also currently
+                        working on becoming a certified master gardener. In my spare time you can find me working over
+                        on Bee-Z Street, a gardening web application I’m continuing to develop so everyday people can
+                        make more exciting home landscapes. Forever the scientist, I'm also experimenting to develop a
+                        new line of home gardening products and developing recipes a cookbook that hope to write
+                        someday.
                     </p>
 
                     <p class="section-paragraph">
                         Click to download my techical resume or scientific CV here:
                     </p>
                     <ul id="about-section-list">
-                        <li><a href="assets/files/PCK_Technical_Resume.pdf" target="_blank" class="hvr-grow">Technical Resume</a></li>
+                        <li><a href="assets/files/PCK_Technical_Resume.pdf" target="_blank" class="hvr-grow">Technical
+                                Resume</a></li>
                         <li> <a href="assets/files/PCK_CV.pdf" target="_blank" class="hvr-grow">Scientific CV</a></li>
                     </ul>
                 </div>
@@ -69,21 +72,27 @@
                     <img src="./assets/images/butterflyweed.jpg" alt="Butterflyweed pic" class="section-image">
                 </div>
                 <h2 class="section-header">Coding Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
+
+
+                <div class="section-content">
+                    <p class="section-paragraph">Here are a few of the projects that I've really enjoyed working on.
+                        Click on the project image to see a brief description of the project and what I liked about it,
+                        as well as links to a deployed version and the project code.</p>
+                </div>
             </div>
             <div class="section-container" id="writings-container">
                 <div class="section-img-div">
                     <img src="./assets/images/coneflower.jpg" alt="Coneflower pic" class="section-image">
                 </div>
                 <h2 class="section-header">Blog Writings</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
                     mollit anim id est laborum.</p>
             </div>
             <div class="section-container" id="contact-container">
@@ -91,11 +100,47 @@
                     <img src="./assets/images/bee_chain.jpg" alt="PCK pic" class="section-image">
                 </div>
                 <h2 class="section-header">Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
+                <div class="section-content">
+                    <p class="section-paragraph">Fill out and submit the form below to contact me.<sup>*</sup> I love
+                        meeting and
+                        talking with people, so let me hear from you!<sup>*</sup> </p>
+
+                    <form action="/webformmailer.php" method="post" id="contact-form">
+                        <input type="hidden" name="redirect" value="thankyou.html" />
+                        <div id="form-info-container">
+                            <div class="form-group">
+                                <label for="contact-name">Name:</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="e.g. Joseph Smith">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email address:</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="e.g. jsmith@coding.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject:</label>
+                                <input class="form-control" type="text" id="contact-subject" placeholder="Re: Networking Telecon">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-body">Message:</label>
+                                <textarea class="form-control" id="contact-body" rows="10" placeholder="Type message here."></textarea>
+                                <small id="emailHelp" class="form-text text-muted">Your personal information will not
+                                    be shared with anyone else without your consent.</small>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-dove"></i>
+                            <span>Submit</span>
+                        </button>
+                        <input type="hidden" name="form_order" value="alpha" />
+                        <input type="hidden" name="form_delivery" value="hourly_digest" />
+                        <input type="hidden" name="form_format" value="html" />
+                    </form>
+
+                    <p class="section-paragraph" id=contact-addendum> * I can also be reached at the email address
+                        listed on my
+                        technical resume or CV (in the "About Me" section) or by clicking the LinkedIn icon in the page
+                        footer. </p>
+                </div>
             </div>
         </div>
     </div>
