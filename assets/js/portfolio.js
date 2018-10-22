@@ -23,7 +23,10 @@ $(document).ready(function() {
 
   setPageContainerOffset();
 
+  //THE FUNCTION FOR THE SOUND SHOULD GO HERE!
+
   //enables background picture to be seen before the page content scrolls into view
+
   $("#quote-container").animate(
     {
       opacity: 0
